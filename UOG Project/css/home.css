@@ -1,0 +1,540 @@
+body {
+  margin: 1.5em;
+  font-family: monospace;
+  background-image: -webkit-gradient(linear, left top, right top, from(dodgerblue), to(white));
+  background-image: linear-gradient(to right, dodgerblue, white);
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.headerbackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(..//img/kenny-eliason-zFSo6bnZJTw-unsplash.jpg);
+  background-size: cover;
+  background-position-x: 20%;
+  background-position-y: 30%;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.8;
+  -webkit-animation: introLoad 2s forwards;
+          animation: introLoad 2s forwards;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+}
+
+.logo span {
+  color: black;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: white;
+  height: 100vh;
+  width: 50%;
+  z-index: 999;
+  text-transform: uppercase;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+nav .close {
+  float: right;
+  margin: 2em;
+  width: 2.5em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+
+nav ul a {
+  color: black;
+  padding: .75em 2em;
+  display: block;
+}
+
+nav ul a:hover {
+  background: #ebebeb;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+header .menu {
+  width: 3em;
+  margin-top: -.6em;
+}
+
+.subhead {
+  font-size: 1.3rem;
+}
+
+section#content {
+  color: white;
+  height: 90vh;
+  -webkit-animation: moveDown 1s ease-in-out forwards;
+          animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+section#content h3 {
+  margin-top: 1.5em;
+  font-size: 2.5em;
+}
+
+section#content .downarrow {
+  stroke: white;
+  position: absolute;
+  width: 1em;
+  left: 250px;
+  top: 370px;
+  animation: moveArrow 1s alternate-reverse infinite;
+}
+
+section#content .downarrow path {
+  fill: white;
+}
+
+button {
+  position: absolute;
+  left: 185px;
+  top: 500px;
+  background-image: -webkit-gradient(linear, left top, right top, from(dodgerblue), to(white));
+  background-image: linear-gradient(to right, dodgerblue, white);
+  border-radius: 10px;
+}
+
+.news {
+  width: 60%;
+}
+
+.news h1 {
+  text-align: center;
+  background: inherit;
+  background-image: url(../img/news2.jpg);
+  font-size: 3rem;
+}
+
+.news div {
+  background: white;
+  font-size: 1rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.open-nav {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@media only screen and (min-width: 539px) {
+  section#content {
+    color: white;
+    height: 90vh;
+  }
+  section#content h3 {
+    margin-top: 1.5em;
+    font-size: 2.5em;
+  }
+  section#content .downarrow {
+    stroke: white;
+    position: absolute;
+    width: 1em;
+    left: 250px;
+    top: 330px;
+    animation: moveArrow 1s alternate-reverse infinite;
+  }
+  section#content .downarrow path {
+    fill: white;
+  }
+  button {
+    position: absolute;
+    left: 185px;
+    top: 460px;
+    background-image: -webkit-gradient(linear, left top, right top, from(dodgerblue), to(white));
+    background-image: linear-gradient(to right, dodgerblue, white);
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 628px) {
+  section#content {
+    color: white;
+    height: 90vh;
+  }
+  section#content h3 {
+    margin-top: 1.5em;
+    font-size: 2.5em;
+  }
+  section#content .downarrow {
+    stroke: white;
+    position: absolute;
+    width: 1em;
+    left: 250px;
+    top: 300px;
+    animation: moveArrow 1s alternate-reverse infinite;
+  }
+  section#content .downarrow path {
+    fill: white;
+  }
+  button {
+    position: absolute;
+    left: 185px;
+    top: 430px;
+    background-image: -webkit-gradient(linear, left top, right top, from(dodgerblue), to(white));
+    background-image: linear-gradient(to right, dodgerblue, white);
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    margin: 1.5em 5em;
+    font-family: monospace;
+    background-image: -webkit-gradient(linear, left top, right top, from(dodgerblue), to(white));
+    background-image: linear-gradient(to right, dodgerblue, white);
+  }
+  section#content {
+    color: white;
+    height: 90vh;
+  }
+  section#content h3 {
+    margin-top: 1.5em;
+    font-size: 2.5em;
+  }
+  section#content .downarrow {
+    stroke: white;
+    position: absolute;
+    width: 1em;
+    left: 250px;
+    top: 330px;
+    animation: moveArrow 1s alternate-reverse infinite;
+  }
+  section#content .downarrow path {
+    fill: white;
+  }
+  button {
+    position: absolute;
+    left: 185px;
+    top: 460px;
+    background-image: -webkit-gradient(linear, left top, right top, from(dodgerblue), to(white));
+    background-image: linear-gradient(to right, dodgerblue, white);
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 719px) {
+  section#content {
+    color: white;
+    height: 90vh;
+  }
+  section#content h3 {
+    margin-top: 1.5em;
+    font-size: 2.5em;
+  }
+  section#content .downarrow {
+    stroke: white;
+    position: absolute;
+    width: 1em;
+    left: 250px;
+    top: 270px;
+    animation: moveArrow 1s alternate-reverse infinite;
+  }
+  section#content .downarrow path {
+    fill: white;
+  }
+  button {
+    position: absolute;
+    left: 185px;
+    top: 400px;
+    background-image: -webkit-gradient(linear, left top, right top, from(dodgerblue), to(white));
+    background-image: linear-gradient(to right, dodgerblue, white);
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 844px) {
+  section#content {
+    color: white;
+    height: 90vh;
+  }
+  section#content h3 {
+    margin-top: 1.5em;
+    font-size: 2.5em;
+  }
+  section#content .downarrow {
+    stroke: white;
+    position: absolute;
+    width: 1em;
+    left: 250px;
+    top: 240px;
+    animation: moveArrow 1s alternate-reverse infinite;
+  }
+  section#content .downarrow path {
+    fill: white;
+  }
+  button {
+    position: absolute;
+    left: 185px;
+    top: 370px;
+    background-image: -webkit-gradient(linear, left top, right top, from(dodgerblue), to(white));
+    background-image: linear-gradient(to right, dodgerblue, white);
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .menu {
+    display: none;
+  }
+  nav {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav .close {
+    display: none;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  nav ul a {
+    color: white;
+    padding: .5em 1.4em;
+    font-size: 1rem;
+  }
+  nav ul a:hover {
+    background: none;
+    -webkit-text-decoration: blue underline;
+            text-decoration: blue underline;
+  }
+  .headerbackground {
+    left: unset;
+    right: 0;
+    width: 50%;
+    height: 42em;
+  }
+  .logo {
+    color: black;
+  }
+  .logo span {
+    color: white;
+  }
+  section#content {
+    color: black;
+    height: auto;
+    width: 40%;
+    margin-bottom: 25em;
+  }
+  section#content .downarrow {
+    stroke: black;
+    position: absolute;
+    width: 1em;
+    left: 250px;
+    top: 520px;
+  }
+  section#content .downarrow path {
+    fill: black;
+  }
+  button {
+    position: absolute;
+    left: 185px;
+    top: 650px;
+    background-image: -webkit-gradient(linear, left top, right top, from(dodgerblue), to(white));
+    background-image: linear-gradient(to right, dodgerblue, white);
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 952px) {
+  section#content {
+    color: black;
+    height: auto;
+    width: 40%;
+    margin-bottom: 25em;
+  }
+  section#content .downarrow {
+    stroke: black;
+    position: absolute;
+    width: 1em;
+    left: 250px;
+    top: 440px;
+  }
+  section#content .downarrow path {
+    fill: black;
+  }
+  button {
+    position: absolute;
+    left: 185px;
+    top: 570px;
+    background-image: -webkit-gradient(linear, left top, right top, from(dodgerblue), to(white));
+    background-image: linear-gradient(to right, dodgerblue, white);
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 1130px) {
+  section#content {
+    color: black;
+    height: auto;
+    width: 40%;
+    margin-bottom: 25em;
+  }
+  section#content .downarrow {
+    stroke: black;
+    position: absolute;
+    width: 1em;
+    left: 250px;
+    top: 400px;
+  }
+  section#content .downarrow path {
+    fill: black;
+  }
+  button {
+    position: absolute;
+    left: 185px;
+    top: 530px;
+    background-image: -webkit-gradient(linear, left top, right top, from(dodgerblue), to(white));
+    background-image: linear-gradient(to right, dodgerblue, white);
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 1175px) {
+  section#content {
+    color: black;
+    height: auto;
+    width: 40%;
+    margin-bottom: 25em;
+  }
+  section#content .downarrow {
+    stroke: black;
+    position: absolute;
+    width: 1em;
+    left: 250px;
+    top: 370px;
+  }
+  section#content .downarrow path {
+    fill: black;
+  }
+  button {
+    position: absolute;
+    left: 185px;
+    top: 500px;
+    background-image: -webkit-gradient(linear, left top, right top, from(dodgerblue), to(white));
+    background-image: linear-gradient(to right, dodgerblue, white);
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  div.wrapper {
+    width: 1150px;
+    margin: 0 auto;
+  }
+}
+
+@-webkit-keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@-webkit-keyframes moveArrow {
+  from {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes moveArrow {
+  from {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes moveDown {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveDown {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=home.css.map */
